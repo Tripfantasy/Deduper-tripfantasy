@@ -40,11 +40,15 @@ Identify and remove PCR duplicates from a SAM file.
    ```
   def clipcig(cig: str) -> int:
     
-  "Interprets cigar string, and returns the sum of soft clipped(S) and matches (M) May need to apply to POS? (should be leftmost)"
-  input: 71M
-  output: 71
-  input: 3S68M
+  "Interprets cigar string, and returns the sum of soft clipped(S) and matches (M) May need to apply to POS? (should be leftmost)"\
+  input: 71M\
+  output: 71\
+  input: 3S68M\
   output 71
+  
+  NOTE: For position correction, take scliplist sum and subtract from POS.\
+  input: pos = 234 (given 3S clipped bases)\
+  output: corrected = 231 
   ```
   scliplist = []
   matchlist = []
