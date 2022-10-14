@@ -72,6 +72,7 @@ NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	0	2	76814284	36	71M	*	0	0	TCC
  **Order of Operations:**
  - SORT Data by chromosome?
  - Store known UMIs
+ - Loop through lines in file. (Applying conditional funnel and removal steps) 
  - Conditional funnel: (most broad to specific) *using recorder() result*
     1. IF chromosome name (RNAME) is the same
     2. IF strand is the same *use strandflag()* 
@@ -80,6 +81,7 @@ NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	0	2	76814284	36	71M	*	0	0	TCC
  - IF UMI is unknown, interpret as *erroneous* given known UMIs are used, store these elsewhere? 
  - If funnel works and runs to completion, surviving seqs should be PCR duplicates. 
  - Omit the duplicates, and store elsewhere? 
+ - For performance, may chunk the workload by chromosome?
  
  
   
