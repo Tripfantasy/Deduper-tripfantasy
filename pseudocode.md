@@ -1,6 +1,10 @@
 # Deduper: 
 Identify and remove PCR duplicates from a SAM file. 
 ---
+**SAM FILE Example record:**
+```
+NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	0	2	76814284	36	71M	*	0	0	TCCACCACAATCTTACCATCCTTCCTCCAGACCACATCGCGTTCTTTGTTCAACTCACAGCTCAAGTACAA	6AEEEEEEAEEAEEEEAAEEEEEEEEEAEEAEEAAEE<EEEEEEEEEAEEEEEEEAAEEAAAEAEEAEAE/	MD:Z:71	NH:i:1	HI:i:1	NM:i:0	SM:i:36	XQ:i:40	X2:i:0	XO:Z:UU
+```
 **PCR Duplicates:** 
 - Same alignment position (Chromosome, position, strand)
 - Potential Soft clipping
@@ -15,8 +19,12 @@ Identify and remove PCR duplicates from a SAM file.
 - QNAME "UMI" (SAM col 1) 
 
 **Concepts:**
-- Bitflag: 16 of FLAG will tell us if it's strand specific. 
-- Soft Clipping: occurs at the ends of an alignment. Noted for in CIGAR string.
+- Bitflag: 16 of FLAG will tell us if it's strand specific.\
+![image](https://user-images.githubusercontent.com/106117735/195733004-b9bc7d2b-81e1-4218-a6bc-ec6c65170863.png)
+
+- Soft Clipping: occurs at the ends of an alignment. Noted for in CIGAR string.\
+![image](https://user-images.githubusercontent.com/106117735/195733139-99a02685-c427-46a5-ba3a-745d861d1703.png)
+
 
 **Functions:**\
   def recorder(line) -> lst
