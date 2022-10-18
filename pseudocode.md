@@ -83,5 +83,5 @@ NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	0	2	76814284	36	71M	*	0	0	TCC
  - Omit the duplicates, and store elsewhere? 
  - For performance, may chunk the workload by chromosome?
  
- 
+ Note: Negative strand adjusted position must be calculated differently.
   
