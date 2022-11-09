@@ -1,0 +1,23 @@
+	Command being timed: "./marro_deduper.py -u /projects/bgmp/dmarro/bioinfo/Bi624/Deduper/Deduper-tripfantasy/STL96.txt -f /projects/bgmp/dmarro/bioinfo/Bi624/Deduper/Deduper-tripfantasy/C1_SE_uniqAlign_sorted.sam -o /projects/bgmp/dmarro/bioinfo/Bi624/Deduper/Deduper-tripfantasy/Deduped_C1_SE_uniqAlign_sorted.sam"
+	User time (seconds): 111.60
+	System time (seconds): 4.53
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:56.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1877316
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 495347
+	Voluntary context switches: 976
+	Involuntary context switches: 91
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
